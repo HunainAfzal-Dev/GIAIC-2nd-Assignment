@@ -1,7 +1,6 @@
 "use client";
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
-import TabButton from "./tabButton";
 import aboutImage from "../../../public/about.jpg"
 const TAB_DATA = [
   {
@@ -65,7 +64,7 @@ const AboutSection = () => {
             I am excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
-            <TabButton
+            {/* <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
@@ -85,7 +84,7 @@ const AboutSection = () => {
             >
               {" "}
               Certifications{" "}
-            </TabButton>
+            </TabButton> */}
           </div>
           <div className="mt-8">
             {/* {TAB_DATA.find((t) => t.id === tab).content} */}
